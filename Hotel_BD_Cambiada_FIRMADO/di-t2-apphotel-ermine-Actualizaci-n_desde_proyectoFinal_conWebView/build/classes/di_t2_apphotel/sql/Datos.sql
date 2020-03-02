@@ -1,0 +1,74 @@
+/* 
+ * Creacion de tablas de la base de datos del hotel.
+ */
+
+CREATE TABLE PROVINCIA (
+ID INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY,
+CODIGO CHAR(2),
+NOMBRE VARCHAR(20) NOT NULL,
+CONSTRAINT ID_PROVINCIA_PK PRIMARY KEY (ID)
+);
+
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('VI', 'ÁLAVA');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('AB', 'ALBACETE');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('A', 'ALICANTE');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('AL', 'ALMERIA');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('AV', 'AVILA');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('BA', 'BADAJOZ');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('IB', 'BALEARES');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('B', 'BARCELONA');
+INSERT INTO PROVINCIA (CODIGO,NOMBRE) VALUES ('MA', 'MÁLAGA');
+
+CREATE TABLE cliente(
+    dni CHAR(9) not null primary key,
+    nombre VARCHAR(50) not null,
+    direccion VARCHAR(50) not null,
+    localidad VARCHAR(20) not null,
+    provincia VARCHAR(20) not null,
+    telefono CHAR(9)
+);
+
+INSERT INTO CLIENTE VALUES ('78451296K','Paco','C/Risco Alto, nº 7','Coin','Malaga', null);
+INSERT INTO CLIENTE VALUES ('12457833Q','Laura','C/Risco Bajo, nº 5','Cartama','Malaga', null);
+INSERT INTO CLIENTE VALUES ('36782145P','Ana','C/Loma Alta, s/n','Antequera','Malaga', null);
+
+CREATE TABLE reserva(
+    ID INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY, -- Id autonumérico
+    fecha_entrada DATE,
+    fecha_salida DATE,
+    num_hab INTEGER,
+    tipo_hab VARCHAR(50),
+    fumador BOOLEAN,
+    regimen CHAR(1),
+    DNI CHAR(9),
+    CONSTRAINT ID_RESERVA_PK PRIMARY KEY (ID),
+    CONSTRAINT DNI_RESERVA_FK FOREIGN KEY (DNI) REFERENCES CLIENTE (DNI)    
+);
+
+CREATE TABLE reservaHotelHabana(
+    DNI CHAR(9) NOT NULL,
+    fecha_entrada DATE,
+    evento char,
+    npersonar int,
+    cocina int,
+    habitacion boolean, 
+    nhabitacion int,
+    ndias int,
+    PRIMARY KEY (DNI));
+
+INSERT INTO RESERVA(FECHA_ENTRADA,FECHA_SALIDA,NUM_HAB,TIPO_HAB,DNI) VALUES ('2018-09-10','2018-09-18',23,'Doble','78451296K');
+
+
+CREATE TABLE reservahotelhabana(
+    ID INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY, -- Id autonumérico
+    fecha_evento DATE,
+    evento CHAR(1),
+    tipo_cocina VARCHAR(50),
+    num_pers CHAR(4),
+    necesita BOOLEAN,
+    num_hab CHAR(4),
+    num_dias CHAR(4),
+    DNI CHAR(9),
+    CONSTRAINT ID_RESERVAHOTELHABANA_PK PRIMARY KEY (ID),
+    CONSTRAINT DNI_RESERVAHOTELHABANA_FK FOREIGN KEY (DNI) REFERENCES CLIENTE (DNI)    
+); 

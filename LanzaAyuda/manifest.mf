@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+X-COMMENT: Main-Class will be added automatically by build
+Main-Class: components.LanzaAyuda
+Class-Path: lib/jh.jar lib/jhall.jar lib/jhbasic.jar lib/jsearch.jar lib/javahelp-2.0.05.jar ../src/help ../src/help/fuentes ../src/help/images ../src/help/JavaHelpSearch ../src/help/ayuda.jar ../src/help/helpset.hs ../src/help/index.xml ../src/help/map.jhm ../src/help/toc.xml
+Codebase: *.oracle.com
+Permissions: sandbox
+Application-Name: LanzaAyuda

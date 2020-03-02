@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN" "http://java.sun.com/products/javahelp/map_2_0.dtd">
+<map version="2.0">
+	<mapID target="top" url="fuentes/introduccion.html"/>
+
+	<mapID target="introduccion" url="fuentes/introduccion.html"/>
+	<mapID target="paginaPrincipal" url="fuentes/paginaPrincipal.html"/>
+	<mapID target="confirmacion_habitaciones" url="fuentes/confirmacion_habitaciones.html"/>
+	<mapID target="confirmacion_salon" url="fuentes/confirmacion_salon.html"/>
+	<mapID target="datosCliente_habitaciones" url="fuentes/datosCliente_habitaciones.html"/>
+	<mapID target="datosCliente_salon" url="fuentes/datosCliente_Salon.html"/>
+	<mapID target="datosReserva_habitaciones" url="fuentes/datosReserva_habitaciones.html"/>
+	<mapID target="datosReserva_salon" url="fuentes/datosReserva_salon.html"/>
+
+
+
+
+
+	<mapID target="organizacion" url="../fuentes/organizacion.html"/>
+	<mapID target="topics" url="../fuentes/topics.html"/>
+	<mapID target="map" url="../fuentes/map.html"/>
+	<mapID target="helpset" url="../fuentes/helpset.html"/>
+	<mapID target="toc" url="../fuentes/toc.html"/>
+	<mapID target="indice" url="../fuentes/indice.html"/>
+	<mapID target="busqueda" url="../fuentes/busqueda.html"/>
+	<mapID target="jar" url="../fuentes/jar.html"/>
+	<mapID target="aplicacion" url="../fuentes/aplicacion.html"/>
+
+
+
+
+	<!--IMAGENES -->
+	<mapID target="toplevel_img" url="../images/top_level.jpg"/>
+	<mapID target="chap_topic_img" url="../images/Chap_topic.jpg"/>
+	<mapID target="topic_img" url="../images/Topic.jpg"/>
+	<mapID target="boton_ayuda_img" url="../images/Boton_ayuda.png"/>
+	<mapID target="boton_clientes_img" url="../images/Boton_Clientes.png"/>
+	<mapID target="boton_reservas_img" url="../images/Boton_Reservas.png"/>
+	<mapID target="cliente_habitaciones_img" url="../images/cliente_Habitaciones.png"/>
+	<mapID target="cliente_salon_img" url="../images/cliente_Salon.png"/>
+	<mapID target="confirmacion_habitaciones_img" url="../images/confirmacion_Habitaciones.png"/>
+	<mapID target="confirmacion_salon_img" url="../images/confirmacion_Salon.png"/>
+	<mapID target="help_icon_img" url="../images/Help_icon.jpg"/>
+	<mapID target="hotel_img" url="../images/hotel.png"/>
+	<mapID target="pagina_habitaciones_img" url="../images/paginaHabitaciones.png"/>
+	<mapID target="reserva_habitaciones_img" url="../images/reserva_Habitaciones.png"/>
+	<mapID target="reserva_salon_img" url="../images/reserva_Salon.png"/>
+</map>

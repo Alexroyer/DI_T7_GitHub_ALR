@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE index PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 2.0//EN" "http://java.sun.com/products/javahelp/index_2_0.dtd">
+<index version="2.0">
+
+		<indexitem text="Busqueda" target="busqueda"/>
+		<indexitem text="Distribuir la ayuda"> 
+			<indexitem text="Añadir ayuda a las aplicaciones" target="aplicacion"/>
+			<indexitem text="Construccion de ficheros jar" target="jar"/>
+		</indexitem>
+
+
+
+
+		<indexitem text="Ficheros JavaHelp">	
+			<indexitem text="Ficheros HelpSet" target="helpset"/>
+			<indexitem text="Ficheros indice" target="indice"/>		
+			<indexitem text="Ficheros map" target="map"/>	
+			<indexitem text="Ficheros TOC" target="toc"/>
+		</indexitem>
+
+		<indexitem text="Introduccion" target="intro"/>
+		<indexitem text="Organizacion de JavaHelp" target="organizacion"/>
+		<indexitem text="Topics HTML" target="topics"/>
+</index>
