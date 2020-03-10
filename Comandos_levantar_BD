@@ -1,0 +1,10 @@
+cd C:\Users\Aleja\Desktop\CURSO_OFICIAL\Desarrollo_Interfaces_2020\Tema_5_DI\hsqldb-2.5.0\hsqldb-2.5.0\hsqldb
+
+
+java -cp lib/hsqldb.jar org.hsqldb.Server -database.0 file:C:/Users/Aleja/Desktop/CURSO_OFICIAL/Desarrollo_Interfaces_2020/Tema_6_DI/Base_de_Datos/DBHotel -dbname.0 xdb1
+
+
+
+jdbc:hsqldb:hsql://localhost:9001/xdb1
+
+
